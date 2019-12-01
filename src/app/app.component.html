@@ -67,7 +67,7 @@
   [longitude]="lng"
   [zoom]="zoom"
   [disableDefaultUI]="false"
-  [zoomControl]="false"
+  [zoomControl]="true"
   (mapClick)="mapClicked($event)">
 
   <agm-marker 
@@ -80,7 +80,7 @@
       (dragEnd)="markerDragEnd(m, $event)">
       
     <agm-info-window>
-      <strong>InfoWindow content</strong>
+      <strong>Info</strong>
     </agm-info-window>
     
   </agm-marker>
